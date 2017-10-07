@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		07AD97391F891A5600024C65 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07AD97381F891A5600024C65 /* NotificationCenter.framework */; };
+		07AD973C1F891A5600024C65 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AD973B1F891A5600024C65 /* TodayViewController.swift */; };
+		07AD973F1F891A5600024C65 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07AD973D1F891A5600024C65 /* MainInterface.storyboard */; };
+		07AD97431F891A5600024C65 /* TodaySmart.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 07AD97371F891A5600024C65 /* TodaySmart.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		07AD97481F89254F00024C65 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D306361F88FBFE002D8398 /* WebService.swift */; };
+		07AD97491F89257000024C65 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07D3062E1F88E951002D8398 /* Alamofire.framework */; };
+		07AD974A1F89258300024C65 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D3061C1F88DE96002D8398 /* Model.swift */; };
+		07AD974B1F892F3E00024C65 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07D305ED1F88D596002D8398 /* Assets.xcassets */; };
 		07D305E41F88D595002D8398 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D305E31F88D595002D8398 /* AppDelegate.swift */; };
 		07D305E61F88D595002D8398 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D305E51F88D595002D8398 /* ViewController.swift */; };
 		07D305E91F88D595002D8398 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07D305E71F88D595002D8398 /* Main.storyboard */; };
@@ -32,9 +40,41 @@
 		07D3061D1F88DE96002D8398 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D3061C1F88DE96002D8398 /* Model.swift */; };
 		07D3062F1F88E951002D8398 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07D3062E1F88E951002D8398 /* Alamofire.framework */; };
 		07D306341F88ED61002D8398 /* SpeedLog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07D306331F88ED61002D8398 /* SpeedLog.framework */; };
+		07D306371F88FBFE002D8398 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D306361F88FBFE002D8398 /* WebService.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		07AD97411F891A5600024C65 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 07D305D81F88D595002D8398 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 07AD97361F891A5600024C65;
+			remoteInfo = TodaySmart;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		07AD97471F891A5600024C65 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				07AD97431F891A5600024C65 /* TodaySmart.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		07AD97371F891A5600024C65 /* TodaySmart.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TodaySmart.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		07AD97381F891A5600024C65 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		07AD973B1F891A5600024C65 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		07AD973E1F891A5600024C65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		07AD97401F891A5600024C65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07AD974C1F893D7500024C65 /* TodaySmart.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TodaySmart.entitlements; sourceTree = "<group>"; };
+		07AD974D1F893D9100024C65 /* SmartJump.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SmartJump.entitlements; sourceTree = "<group>"; };
 		07D305E01F88D595002D8398 /* SmartJump.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartJump.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07D305E31F88D595002D8398 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		07D305E51F88D595002D8398 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -63,9 +103,20 @@
 		07D3062C1F88E911002D8398 /* Alamofire.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = Alamofire.framework.dSYM; path = SmartJump/Carthage/Build/iOS/Alamofire.framework.dSYM; sourceTree = "<group>"; };
 		07D3062E1F88E951002D8398 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = SmartJump/Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		07D306331F88ED61002D8398 /* SpeedLog.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpeedLog.framework; path = SmartJump/Carthage/Build/iOS/SpeedLog.framework; sourceTree = "<group>"; };
+		07D306361F88FBFE002D8398 /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		07D306381F890F81002D8398 /* Location.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Location.gpx; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		07AD97341F891A5600024C65 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07AD97391F891A5600024C65 /* NotificationCenter.framework in Frameworks */,
+				07AD97491F89257000024C65 /* Alamofire.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		07D305DD1F88D595002D8398 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -93,10 +144,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		07AD973A1F891A5600024C65 /* TodaySmart */ = {
+			isa = PBXGroup;
+			children = (
+				07AD974C1F893D7500024C65 /* TodaySmart.entitlements */,
+				07AD973B1F891A5600024C65 /* TodayViewController.swift */,
+				07AD973D1F891A5600024C65 /* MainInterface.storyboard */,
+				07AD97401F891A5600024C65 /* Info.plist */,
+			);
+			path = TodaySmart;
+			sourceTree = "<group>";
+		};
 		07D305D71F88D595002D8398 = {
 			isa = PBXGroup;
 			children = (
 				07D305E21F88D595002D8398 /* SmartJump */,
+				07AD973A1F891A5600024C65 /* TodaySmart */,
 				07D305E11F88D595002D8398 /* Products */,
 				07D305FE1F88DBDE002D8398 /* Frameworks */,
 			);
@@ -106,6 +169,7 @@
 			isa = PBXGroup;
 			children = (
 				07D305E01F88D595002D8398 /* SmartJump.app */,
+				07AD97371F891A5600024C65 /* TodaySmart.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -113,6 +177,7 @@
 		07D305E21F88D595002D8398 /* SmartJump */ = {
 			isa = PBXGroup;
 			children = (
+				07AD974D1F893D9100024C65 /* SmartJump.entitlements */,
 				07D306301F88EA66002D8398 /* Classes */,
 				07D3061B1F88DE84002D8398 /* Model */,
 				07D305FD1F88DB91002D8398 /* GoogleMaps.bundle */,
@@ -121,6 +186,7 @@
 				07D305F81F88D9F8002D8398 /* GoogleMapsBase.framework */,
 				07D305E31F88D595002D8398 /* AppDelegate.swift */,
 				07D305E51F88D595002D8398 /* ViewController.swift */,
+				07D306381F890F81002D8398 /* Location.gpx */,
 				07D305E71F88D595002D8398 /* Main.storyboard */,
 				07D305ED1F88D596002D8398 /* Assets.xcassets */,
 				07D305EF1F88D596002D8398 /* LaunchScreen.storyboard */,
@@ -148,6 +214,7 @@
 				07D306061F88DBF8002D8398 /* CoreLocation.framework */,
 				07D306041F88DBF2002D8398 /* CoreData.framework */,
 				07D306021F88DBEC002D8398 /* Accelerate.framework */,
+				07AD97381F891A5600024C65 /* NotificationCenter.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -163,13 +230,39 @@
 		07D306301F88EA66002D8398 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				07D306351F88FBE8002D8398 /* WebService */,
 			);
 			path = Classes;
+			sourceTree = "<group>";
+		};
+		07D306351F88FBE8002D8398 /* WebService */ = {
+			isa = PBXGroup;
+			children = (
+				07D306361F88FBFE002D8398 /* WebService.swift */,
+			);
+			path = WebService;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		07AD97361F891A5600024C65 /* TodaySmart */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07AD97461F891A5600024C65 /* Build configuration list for PBXNativeTarget "TodaySmart" */;
+			buildPhases = (
+				07AD97331F891A5600024C65 /* Sources */,
+				07AD97341F891A5600024C65 /* Frameworks */,
+				07AD97351F891A5600024C65 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TodaySmart;
+			productName = TodaySmart;
+			productReference = 07AD97371F891A5600024C65 /* TodaySmart.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		07D305DF1F88D595002D8398 /* SmartJump */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 07D305F51F88D596002D8398 /* Build configuration list for PBXNativeTarget "SmartJump" */;
@@ -178,10 +271,12 @@
 				07D305DD1F88D595002D8398 /* Frameworks */,
 				07D305DE1F88D595002D8398 /* Resources */,
 				07D3062B1F88E840002D8398 /* ShellScript */,
+				07AD97471F891A5600024C65 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				07AD97421F891A5600024C65 /* PBXTargetDependency */,
 			);
 			name = SmartJump;
 			productName = SmartJump;
@@ -198,9 +293,23 @@
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = Home;
 				TargetAttributes = {
+					07AD97361F891A5600024C65 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
 					07D305DF1F88D595002D8398 = {
 						CreatedOnToolsVersion = 9.0;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -218,11 +327,21 @@
 			projectRoot = "";
 			targets = (
 				07D305DF1F88D595002D8398 /* SmartJump */,
+				07AD97361F891A5600024C65 /* TodaySmart */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		07AD97351F891A5600024C65 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07AD974B1F892F3E00024C65 /* Assets.xcassets in Resources */,
+				07AD973F1F891A5600024C65 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		07D305DE1F88D595002D8398 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -255,6 +374,16 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		07AD97331F891A5600024C65 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07AD974A1F89258300024C65 /* Model.swift in Sources */,
+				07AD97481F89254F00024C65 /* WebService.swift in Sources */,
+				07AD973C1F891A5600024C65 /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		07D305DC1F88D595002D8398 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -262,13 +391,30 @@
 				07D305E61F88D595002D8398 /* ViewController.swift in Sources */,
 				07D305EC1F88D595002D8398 /* SmartJump.xcdatamodeld in Sources */,
 				07D305E41F88D595002D8398 /* AppDelegate.swift in Sources */,
+				07D306371F88FBFE002D8398 /* WebService.swift in Sources */,
 				07D3061D1F88DE96002D8398 /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		07AD97421F891A5600024C65 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 07AD97361F891A5600024C65 /* TodaySmart */;
+			targetProxy = 07AD97411F891A5600024C65 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
+		07AD973D1F891A5600024C65 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				07AD973E1F891A5600024C65 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
 		07D305E71F88D595002D8398 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -288,6 +434,51 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		07AD97441F891A5600024C65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = TodaySmart/TodaySmart.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VVU2BQZ6F9;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SmartJump/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = TodaySmart/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bcf.DigitalOcean-Toolbox.TodaySmart";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		07AD97451F891A5600024C65 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = TodaySmart/TodaySmart.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VVU2BQZ6F9;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SmartJump/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = TodaySmart/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bcf.DigitalOcean-Toolbox.TodaySmart";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		07D305F31F88D596002D8398 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -398,7 +589,9 @@
 		07D305F61F88D596002D8398 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SmartJump/SmartJump.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VVU2BQZ6F9;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -409,7 +602,7 @@
 				INFOPLIST_FILE = SmartJump/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = com.smartjump;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bcf.DigitalOcean-Toolbox";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -419,7 +612,9 @@
 		07D305F71F88D596002D8398 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SmartJump/SmartJump.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VVU2BQZ6F9;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -430,7 +625,7 @@
 				INFOPLIST_FILE = SmartJump/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = com.smartjump;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bcf.DigitalOcean-Toolbox";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -440,6 +635,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		07AD97461F891A5600024C65 /* Build configuration list for PBXNativeTarget "TodaySmart" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07AD97441F891A5600024C65 /* Debug */,
+				07AD97451F891A5600024C65 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		07D305DB1F88D595002D8398 /* Build configuration list for PBXProject "SmartJump" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
