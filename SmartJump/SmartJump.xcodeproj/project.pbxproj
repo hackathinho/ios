@@ -30,6 +30,7 @@
 		07D306191F88DD77002D8398 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 07D306181F88DD77002D8398 /* libz.tbd */; };
 		07D3061A1F88DE57002D8398 /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 07D305FD1F88DB91002D8398 /* GoogleMaps.bundle */; };
 		07D3061D1F88DE96002D8398 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D3061C1F88DE96002D8398 /* Model.swift */; };
+		07D306291F88E584002D8398 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07D306281F88E584002D8398 /* Alamofire.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,7 @@
 		07D306161F88DC35002D8398 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		07D306181F88DD77002D8398 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		07D3061C1F88DE96002D8398 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		07D306281F88E584002D8398 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = SmartJump/Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 				07D306191F88DD77002D8398 /* libz.tbd in Frameworks */,
 				07D306171F88DC35002D8398 /* UIKit.framework in Frameworks */,
 				07D306151F88DC2D002D8398 /* SystemConfiguration.framework in Frameworks */,
+				07D306291F88E584002D8398 /* Alamofire.framework in Frameworks */,
 				07D306131F88DC20002D8398 /* QuartzCore.framework in Frameworks */,
 				07D306111F88DC1A002D8398 /* OpenGLES.framework in Frameworks */,
 				07D3060F1F88DC15002D8398 /* libc++.tbd in Frameworks */,
@@ -125,6 +128,7 @@
 		07D305FE1F88DBDE002D8398 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				07D306281F88E584002D8398 /* Alamofire.framework */,
 				07D306181F88DD77002D8398 /* libz.tbd */,
 				07D306161F88DC35002D8398 /* UIKit.framework */,
 				07D306141F88DC2D002D8398 /* SystemConfiguration.framework */,
@@ -159,6 +163,7 @@
 				07D305DC1F88D595002D8398 /* Sources */,
 				07D305DD1F88D595002D8398 /* Frameworks */,
 				07D305DE1F88D595002D8398 /* Resources */,
+				07D3061E1F88E239002D8398 /* Carthage */,
 			);
 			buildRules = (
 			);
@@ -216,6 +221,25 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		07D3061E1F88E239002D8398 /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"",
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+			);
+			name = Carthage;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "echo \"Not copying $SRCROOT\"\n/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		07D305DC1F88D595002D8398 /* Sources */ = {
@@ -367,6 +391,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/SmartJump",
+					"$(PROJECT_DIR)/SmartJump/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = SmartJump/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -387,6 +412,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/SmartJump",
+					"$(PROJECT_DIR)/SmartJump/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = SmartJump/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

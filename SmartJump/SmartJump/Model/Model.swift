@@ -9,14 +9,16 @@
 import Foundation
 
 
-class Location {
+struct Location {
     var lat : Double
     var long : Double
     var precision : Double
 }
 
 
-class Station {
+
+
+struct Station {
     var lat : Double
     var long : Double
     var dis : Double
@@ -26,7 +28,7 @@ class Station {
 
 
 
-class Info {
+struct Info {
     var name : String
     var address : String
 }
