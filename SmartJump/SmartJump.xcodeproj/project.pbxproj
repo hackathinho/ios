@@ -31,6 +31,7 @@
 		07D3061A1F88DE57002D8398 /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 07D305FD1F88DB91002D8398 /* GoogleMaps.bundle */; };
 		07D3061D1F88DE96002D8398 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D3061C1F88DE96002D8398 /* Model.swift */; };
 		07D3062F1F88E951002D8398 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07D3062E1F88E951002D8398 /* Alamofire.framework */; };
+		07D306341F88ED61002D8398 /* SpeedLog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07D306331F88ED61002D8398 /* SpeedLog.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +62,7 @@
 		07D3061C1F88DE96002D8398 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		07D3062C1F88E911002D8398 /* Alamofire.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = Alamofire.framework.dSYM; path = SmartJump/Carthage/Build/iOS/Alamofire.framework.dSYM; sourceTree = "<group>"; };
 		07D3062E1F88E951002D8398 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = SmartJump/Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		07D306331F88ED61002D8398 /* SpeedLog.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpeedLog.framework; path = SmartJump/Carthage/Build/iOS/SpeedLog.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 				07D306191F88DD77002D8398 /* libz.tbd in Frameworks */,
 				07D306171F88DC35002D8398 /* UIKit.framework in Frameworks */,
 				07D306151F88DC2D002D8398 /* SystemConfiguration.framework in Frameworks */,
+				07D306341F88ED61002D8398 /* SpeedLog.framework in Frameworks */,
 				07D306131F88DC20002D8398 /* QuartzCore.framework in Frameworks */,
 				07D306111F88DC1A002D8398 /* OpenGLES.framework in Frameworks */,
 				07D3060F1F88DC15002D8398 /* libc++.tbd in Frameworks */,
@@ -110,6 +113,7 @@
 		07D305E21F88D595002D8398 /* SmartJump */ = {
 			isa = PBXGroup;
 			children = (
+				07D306301F88EA66002D8398 /* Classes */,
 				07D3061B1F88DE84002D8398 /* Model */,
 				07D305FD1F88DB91002D8398 /* GoogleMaps.bundle */,
 				07D305FC1F88DA9C002D8398 /* GoogleMaps.framework */,
@@ -129,6 +133,7 @@
 		07D305FE1F88DBDE002D8398 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				07D306331F88ED61002D8398 /* SpeedLog.framework */,
 				07D3062E1F88E951002D8398 /* Alamofire.framework */,
 				07D3062C1F88E911002D8398 /* Alamofire.framework.dSYM */,
 				07D306181F88DD77002D8398 /* libz.tbd */,
@@ -153,6 +158,13 @@
 				07D3061C1F88DE96002D8398 /* Model.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		07D306301F88EA66002D8398 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,6 +244,7 @@
 			);
 			inputPaths = (
 				"$(SRCROOT)/SmartJump/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/SmartJump/Carthage/Build/iOS/SpeedLog.framework",
 			);
 			outputPaths = (
 			);
