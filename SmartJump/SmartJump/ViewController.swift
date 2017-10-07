@@ -10,7 +10,7 @@ import UIKit
 import GoogleMaps
 import CoreLocation
 import SpeedLog
-
+import Foundation
 
 class ViewController: UIViewController, CLLocationManagerDelegate {
 
@@ -66,6 +66,20 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         case .denied:
             print("Autorization denied")
         default:()
+            
+        }
+        
+        
+        if let mysharedDefault = UserDefaults(suiteName: "group.com.bcf.DigitalOcean-Toolbox") {
+
+            if let obj = mysharedDefault.object(forKey: "station") as? NSData {
+                //MARK:  pete....
+                /*
+                if let station = NSKeyedUnarchiver.unarchiveObject(with: obj as Data) as? Station {
+                    print(station.type)
+                }
+                 */
+            }
             
         }
     }
