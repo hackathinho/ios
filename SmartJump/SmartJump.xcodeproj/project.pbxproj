@@ -30,7 +30,7 @@
 		07D306191F88DD77002D8398 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 07D306181F88DD77002D8398 /* libz.tbd */; };
 		07D3061A1F88DE57002D8398 /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 07D305FD1F88DB91002D8398 /* GoogleMaps.bundle */; };
 		07D3061D1F88DE96002D8398 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D3061C1F88DE96002D8398 /* Model.swift */; };
-		07D306291F88E584002D8398 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07D306281F88E584002D8398 /* Alamofire.framework */; };
+		07D3062F1F88E951002D8398 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07D3062E1F88E951002D8398 /* Alamofire.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,7 +59,8 @@
 		07D306161F88DC35002D8398 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		07D306181F88DD77002D8398 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		07D3061C1F88DE96002D8398 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
-		07D306281F88E584002D8398 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = SmartJump/Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		07D3062C1F88E911002D8398 /* Alamofire.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = Alamofire.framework.dSYM; path = SmartJump/Carthage/Build/iOS/Alamofire.framework.dSYM; sourceTree = "<group>"; };
+		07D3062E1F88E951002D8398 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = SmartJump/Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,7 +71,6 @@
 				07D306191F88DD77002D8398 /* libz.tbd in Frameworks */,
 				07D306171F88DC35002D8398 /* UIKit.framework in Frameworks */,
 				07D306151F88DC2D002D8398 /* SystemConfiguration.framework in Frameworks */,
-				07D306291F88E584002D8398 /* Alamofire.framework in Frameworks */,
 				07D306131F88DC20002D8398 /* QuartzCore.framework in Frameworks */,
 				07D306111F88DC1A002D8398 /* OpenGLES.framework in Frameworks */,
 				07D3060F1F88DC15002D8398 /* libc++.tbd in Frameworks */,
@@ -78,6 +78,7 @@
 				07D3060B1F88DC03002D8398 /* GLKit.framework in Frameworks */,
 				07D306091F88DBFE002D8398 /* CoreText.framework in Frameworks */,
 				07D306071F88DBF8002D8398 /* CoreLocation.framework in Frameworks */,
+				07D3062F1F88E951002D8398 /* Alamofire.framework in Frameworks */,
 				07D306051F88DBF2002D8398 /* CoreData.framework in Frameworks */,
 				07D306031F88DBEC002D8398 /* Accelerate.framework in Frameworks */,
 				07D305FF1F88DBDE002D8398 /* GoogleMaps.framework in Frameworks */,
@@ -128,7 +129,8 @@
 		07D305FE1F88DBDE002D8398 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				07D306281F88E584002D8398 /* Alamofire.framework */,
+				07D3062E1F88E951002D8398 /* Alamofire.framework */,
+				07D3062C1F88E911002D8398 /* Alamofire.framework.dSYM */,
 				07D306181F88DD77002D8398 /* libz.tbd */,
 				07D306161F88DC35002D8398 /* UIKit.framework */,
 				07D306141F88DC2D002D8398 /* SystemConfiguration.framework */,
@@ -163,7 +165,7 @@
 				07D305DC1F88D595002D8398 /* Sources */,
 				07D305DD1F88D595002D8398 /* Frameworks */,
 				07D305DE1F88D595002D8398 /* Resources */,
-				07D3061E1F88E239002D8398 /* Carthage */,
+				07D3062B1F88E840002D8398 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -223,21 +225,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		07D3061E1F88E239002D8398 /* Carthage */ = {
+		07D3062B1F88E840002D8398 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"",
-				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/SmartJump/Carthage/Build/iOS/Alamofire.framework",
 			);
-			name = Carthage;
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "echo \"Not copying $SRCROOT\"\n/usr/local/bin/carthage copy-frameworks\n";
+			shellScript = "echo \"carthage copy $SRCROOT/SmartJump/Carthage/Build/iOS/Alamofire.framework\"\n/usr/local/bin/carthage copy-frameworks";
 		};
 /* End PBXShellScriptBuildPhase section */
 
