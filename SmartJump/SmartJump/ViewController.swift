@@ -34,8 +34,10 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         
         // Create a GMSCameraPosition that tells the map to display the
         // coordinate -33.86,151.20 at zoom level 6.
-        let camera = GMSCameraPosition.camera(withLatitude: -33.86, longitude: 151.20, zoom: 6.0)
+        
+        let camera = GMSCameraPosition.camera(withLatitude: 43.36357, longitude: -8.42563, zoom: 6.0)
         mapView = GMSMapView.map(withFrame: CGRect.zero, camera: camera)
+        mapView.isMyLocationEnabled = true
         mapView.isMyLocationEnabled = true
         view = mapView
         
@@ -128,7 +130,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
             marker.snippet = address.postalCode
             marker.map = self.mapView
 
-            let camera = GMSCameraPosition.camera(withTarget: address.coordinate, zoom: 6.0)
+            let camera = GMSCameraPosition.camera(withTarget: address.coordinate, zoom: 13.0)
             self.mapView.animate(to: camera)
         }
     }
